@@ -42,6 +42,38 @@ a:hover {
   background: none;
 }
 
+#blink {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ff3535;
+  border-radius: 50%; /* Corrected from 100px to 50% to ensure perfect circle */
+  margin-right: 10px;
+  animation: blink 0.8s infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.availability {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align the blinking dot and text vertically */
+  font-size: 12px;
+  color: #ff3535;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.avaliable-font {
+  margin-top: 19px; /* Remove margin to prevent unnecessary spacing */
+}
+
+
+
 /* User Image */
 .user-image {
   width: 140px;
